@@ -6,6 +6,7 @@
 - pywal
 - wpgtk
 - rofi
+- ueberzug
 
 
 **Optional dependencies**:
