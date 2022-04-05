@@ -1,6 +1,6 @@
 # My bspwm dotfiles
 
-## Dependencies:
+**Dependencies**:
 - bspwm
 - polybar
 - pywal
@@ -8,7 +8,7 @@
 - rofi
 
 
-## Optional dependencies:
+**Optional dependencies**:
 - ncmpcpp
 - ranger
 - picom-jonaburg
