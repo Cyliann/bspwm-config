@@ -1,0 +1,38 @@
+import:
+  - ~/.cache/wal/colors-alacritty.yml
+    #- ~/.config/wpg/templates/wal_templates_colors-alacritty.yml
+
+# Padding
+window:
+  padding:
+    x: 15
+    y: 15
+  dynamic_padding: true  
+
+# Font configuration
+font:
+  #Normal (roman) font face
+  normal:
+    family: Fira Code 
+    style: Regular
+
+  # Bold font face
+  bold:
+    family: Fira Code
+    style: Bold
+
+  # Italic font face
+  italics:
+    family: Fira Code
+    style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    family: Source Code Pro
+    style: Bold Italic
+
+  # Point size
+  size: 12.0
+
+# Opacity
+background_opacity: 0.8
