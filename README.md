@@ -1,16 +1,16 @@
 # My bspwm dotfiles
 
 Dependencies:
--bspwm
--polybar
--pywal
--wpgtk
--rofi
+- bspwm
+- polybar
+- pywal
+- wpgtk
+- rofi
 
 Optional dependencies:
--ncmpcpp
--ranger
--picom-jonaburg
--colorls
--zsh
--nvim
+- ncmpcpp
+- ranger
+- picom-jonaburg
+- colorls
+- zsh
+- nvim
