@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/samurai.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0f1219",
+        "foreground": "#fffffb",
+        "cursor": "#fffffb"
+    },
+    "colors": {
+        "color0": "#0f1219",
+        "color1": "#AC443B",
+        "color2": "#995F5F",
+        "color3": "#B78771",
+        "color4": "#5A7587",
+        "color5": "#9D9C9B",
+        "color6": "#6F909D",
+        "color7": "#d8d7d2",
+        "color8": "#212838",
+        "color9": "#ee4b3d",
+        "color10": "#d66b6b",
+        "color11": "#ffa87f",
+        "color12": "#669bbe",
+        "color13": "#e0cab5",
+        "color14": "#7ec2dd",
+        "color15": "#fffffb"
+    }
+}

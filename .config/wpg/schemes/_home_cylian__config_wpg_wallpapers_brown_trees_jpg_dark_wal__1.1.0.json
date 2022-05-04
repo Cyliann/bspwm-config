@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/brown_trees.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#141415",
+        "foreground": "#f4fdff",
+        "cursor": "#f4fdff"
+    },
+    "colors": {
+        "color0": "#141415",
+        "color1": "#B4C4DB",
+        "color2": "#99B3CF",
+        "color3": "#E29646",
+        "color4": "#767985",
+        "color5": "#A9A0A1",
+        "color6": "#7099BB",
+        "color7": "#d5dde7",
+        "color8": "#2c2c2e",
+        "color9": "#ccf5ff",
+        "color10": "#afe7ff",
+        "color11": "#ffc347",
+        "color12": "#8993bd",
+        "color13": "#f0bac0",
+        "color14": "#7ec8ff",
+        "color15": "#f4fdff"
+    }
+}

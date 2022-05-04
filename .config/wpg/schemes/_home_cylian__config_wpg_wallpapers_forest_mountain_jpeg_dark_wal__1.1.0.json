@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/forest_mountain.jpeg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0c0d0f",
+        "foreground": "#fffff7",
+        "cursor": "#fffff7"
+    },
+    "colors": {
+        "color0": "#0c0d0f",
+        "color1": "#956A5D",
+        "color2": "#A09A9E",
+        "color3": "#C08D77",
+        "color4": "#6C7887",
+        "color5": "#D4AFA8",
+        "color6": "#68ACA8",
+        "color7": "#dedbd1",
+        "color8": "#22242b",
+        "color9": "#d18169",
+        "color10": "#e4b3d4",
+        "color11": "#ffaf86",
+        "color12": "#7c9abf",
+        "color13": "#ffd2c1",
+        "color14": "#75f1ea",
+        "color15": "#fffff7"
+    }
+}

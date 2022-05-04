@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/alena_aenami_million-little-pieces.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0f0a0d",
+        "foreground": "#ffffc0",
+        "cursor": "#ffffc0"
+    },
+    "colors": {
+        "color0": "#0f0a0d",
+        "color1": "#CA372B",
+        "color2": "#8E2C33",
+        "color3": "#DD5528",
+        "color4": "#903646",
+        "color5": "#AD4542",
+        "color6": "#A9292E",
+        "color7": "#f3cc94",
+        "color8": "#2d1d27",
+        "color9": "#ff3927",
+        "color10": "#c42d37",
+        "color11": "#ff6522",
+        "color12": "#c83952",
+        "color13": "#f04b46",
+        "color14": "#e9272f",
+        "color15": "#ffffc0"
+    }
+}

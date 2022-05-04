@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/alena_aenami_eternity.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0A121E",
+        "foreground": "#dbffff",
+        "cursor": "#dbffff"
+    },
+    "colors": {
+        "color0": "#0A121E",
+        "color1": "#A13C6D",
+        "color2": "#26496F",
+        "color3": "#4E6BA4",
+        "color4": "#255E9A",
+        "color5": "#AE6498",
+        "color6": "#449AC6",
+        "color7": "#a8c6df",
+        "color8": "#152844",
+        "color9": "#df3f8d",
+        "color10": "#275e9a",
+        "color11": "#5585e4",
+        "color12": "#2379d4",
+        "color13": "#f370cc",
+        "color14": "#47cdff",
+        "color15": "#dbffff"
+    }
+}

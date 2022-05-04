@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/lake.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#151610",
+        "foreground": "#fffefe",
+        "cursor": "#fffefe"
+    },
+    "colors": {
+        "color0": "#151610",
+        "color1": "#BBC1C3",
+        "color2": "#8E9292",
+        "color3": "#9AA3A4",
+        "color4": "#697A86",
+        "color5": "#AEB0B1",
+        "color6": "#718B8D",
+        "color7": "#dedddd",
+        "color8": "#303324",
+        "color9": "#daffff",
+        "color10": "#a5d0d0",
+        "color11": "#b3e4e9",
+        "color12": "#79a1bd",
+        "color13": "#cbecfc",
+        "color14": "#82c2c7",
+        "color15": "#fffefe"
+    }
+}

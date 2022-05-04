@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/alena_aenami_aenami-lunar.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#081120",
+        "foreground": "#ffffd4",
+        "cursor": "#ffffd4"
+    },
+    "colors": {
+        "color0": "#081120",
+        "color1": "#CE3E5A",
+        "color2": "#8E4258",
+        "color3": "#AB4A5B",
+        "color4": "#6F445C",
+        "color5": "#E45B5E",
+        "color6": "#8B3E57",
+        "color7": "#f3d8ad",
+        "color8": "#112648",
+        "color9": "#ff3f6a",
+        "color10": "#c6486c",
+        "color11": "#ee506b",
+        "color12": "#9b4c78",
+        "color13": "#ff6166",
+        "color14": "#c1436c",
+        "color15": "#ffffd4"
+    }
+}

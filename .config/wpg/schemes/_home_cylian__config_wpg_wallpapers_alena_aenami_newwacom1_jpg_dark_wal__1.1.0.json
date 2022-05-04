@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/alena_aenami_newwacom1.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#040202",
+        "foreground": "#ffe4cf",
+        "cursor": "#ffe4cf"
+    },
+    "colors": {
+        "color0": "#040202",
+        "color1": "#CF3A0E",
+        "color2": "#8D6346",
+        "color3": "#E65516",
+        "color4": "#A25934",
+        "color5": "#8E5D42",
+        "color6": "#A02D11",
+        "color7": "#dfae9e",
+        "color8": "#290e0e",
+        "color9": "#ff4303",
+        "color10": "#c57e4d",
+        "color11": "#ff670c",
+        "color12": "#e06f35",
+        "color13": "#c67448",
+        "color14": "#db330a",
+        "color15": "#ffe4cf"
+    }
+}

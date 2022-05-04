@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/fool_moon_night.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#030206",
+        "foreground": "#ffedff",
+        "cursor": "#ffedff"
+    },
+    "colors": {
+        "color0": "#030206",
+        "color1": "#B7235C",
+        "color2": "#5B595B",
+        "color3": "#C18678",
+        "color4": "#250F98",
+        "color5": "#C844A7",
+        "color6": "#5128A7",
+        "color7": "#dbc5e2",
+        "color8": "#130a2f",
+        "color9": "#fc1f74",
+        "color10": "#816881",
+        "color11": "#ffa187",
+        "color12": "#2808d0",
+        "color13": "#ff46e1",
+        "color14": "#6426e6",
+        "color15": "#ffedff"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/alena_aenami_otherside.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#120a17",
+        "foreground": "#e9f2ff",
+        "cursor": "#e9f2ff"
+    },
+    "colors": {
+        "color0": "#120a17",
+        "color1": "#E36D4F",
+        "color2": "#E99956",
+        "color3": "#DDC86A",
+        "color4": "#37599B",
+        "color5": "#987298",
+        "color6": "#565894",
+        "color7": "#b4bbd5",
+        "color8": "#2d183a",
+        "color9": "#ff8152",
+        "color10": "#ffc55b",
+        "color11": "#ffff74",
+        "color12": "#396fd7",
+        "color13": "#d682d6",
+        "color14": "#6064cf",
+        "color15": "#e9f2ff"
+    }
+}

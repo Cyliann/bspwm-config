@@ -1,8 +1,8 @@
 import:
   - ~/.cache/wal/colors-alacritty.yml
-    #- ~/.config/wpg/templates/wal_templates_colors-alacritty.yml
+  - ~/.config/wpg/templates/wal_templates_colors-alacritty.yml
 
-# Padding
+# Padding and opacity
 window:
   padding:
     x: 15
@@ -34,5 +34,3 @@ font:
   # Point size
   size: 12.0
 
-# Opacity
-background_opacity: 0.8

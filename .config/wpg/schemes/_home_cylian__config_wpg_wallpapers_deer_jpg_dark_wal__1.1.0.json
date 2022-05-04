@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/deer.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#110f10",
+        "foreground": "#fcfdff",
+        "cursor": "#fcfdff"
+    },
+    "colors": {
+        "color0": "#110f10",
+        "color1": "#BCC2CC",
+        "color2": "#B2BBCA",
+        "color3": "#D5C4AB",
+        "color4": "#7A8590",
+        "color5": "#989CA4",
+        "color6": "#9DADC2",
+        "color7": "#dbdcdf",
+        "color8": "#2b2629",
+        "color9": "#dbf5ff",
+        "color10": "#ceecff",
+        "color11": "#ffffc5",
+        "color12": "#8daccc",
+        "color13": "#b1c3e9",
+        "color14": "#b5ddff",
+        "color15": "#fcfdff"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/cylian/Pictures/Wallpapers/cliff2.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c1211",
+        "foreground": "#e9e5e9",
+        "cursor": "#e9e5e9"
+    },
+    "colors": {
+        "color0": "#0c1211",
+        "color1": "#6F8E98",
+        "color2": "#9DA5A8",
+        "color3": "#C4BBBB",
+        "color4": "#ABBBC4",
+        "color5": "#B9C4CD",
+        "color6": "#CFCFD6",
+        "color7": "#e9e5e9",
+        "color8": "#a3a0a3",
+        "color9": "#6F8E98",
+        "color10": "#9DA5A8",
+        "color11": "#C4BBBB",
+        "color12": "#ABBBC4",
+        "color13": "#B9C4CD",
+        "color14": "#CFCFD6",
+        "color15": "#e9e5e9"
+    }
+}

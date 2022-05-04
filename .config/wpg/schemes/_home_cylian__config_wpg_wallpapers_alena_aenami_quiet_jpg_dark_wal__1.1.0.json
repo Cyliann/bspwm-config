@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/alena_aenami_quiet.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#371a10",
+        "foreground": "#f3ffff",
+        "cursor": "#f3ffff"
+    },
+    "colors": {
+        "color0": "#371a10",
+        "color1": "#8FCAD2",
+        "color2": "#73B8C5",
+        "color3": "#91BBC6",
+        "color4": "#5CA1AF",
+        "color5": "#9FB3B4",
+        "color6": "#77C3CD",
+        "color7": "#cfe1e3",
+        "color8": "#5e2c1a",
+        "color9": "#a2ffff",
+        "color10": "#81fdff",
+        "color11": "#a6ffff",
+        "color12": "#66dcf4",
+        "color13": "#b8fcff",
+        "color14": "#85ffff",
+        "color15": "#f3ffff"
+    }
+}

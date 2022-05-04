@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/fox.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0b0f18",
+        "foreground": "#fffff5",
+        "cursor": "#fffff5"
+    },
+    "colors": {
+        "color0": "#0b0f18",
+        "color1": "#A94F34",
+        "color2": "#A09473",
+        "color3": "#DBAA54",
+        "color4": "#966859",
+        "color5": "#A0A394",
+        "color6": "#728082",
+        "color7": "#e0dcd0",
+        "color8": "#1a243a",
+        "color9": "#ea5e35",
+        "color10": "#e1c883",
+        "color11": "#ffe259",
+        "color12": "#d27f64",
+        "color13": "#dce8ac",
+        "color14": "#84b2b8",
+        "color15": "#fffff5"
+    }
+}

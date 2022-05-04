@@ -17,8 +17,8 @@
 ;==========================================================
 
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+margin-top = 0
+margin-bottom = 10
 
 [colors]
 background = ${xrdb:color0:#222}
@@ -30,32 +30,32 @@ alert = ${xrdb:color3:#222}
 
 [bars]
 ;monitor = ${env:MONITOR:HDMI-1}
-width = 99%
-height = 27
-offset-x = 0.5%
+width = 98%
+height = 26
+offset-x = 0.75%
 offset-y = 1%
 radius = 9.0
 fixed-center = true
 
-background = #aa000000
+background = #00000000
 foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
 
 border-size = 0
 border-color = #00000000
 
-padding-left = 2
-padding-right = 2 
+padding-left = 0
+padding-right = 0 
 
-module-margin-left = 2
-module-margin-right = 2
+module-margin-left = 0
+module-margin-right = 0
 
 font-0 = DejaVuSans:size=13;2
 font-1 = FontAwesome:size=12;2
 font-2 = feather:size=12;2
 font-3 = iosevka-nerd-font:size=12;0
+font-4 = Iosevka Nerd Font:size=16;3
+
+separator = ""
 
 ;tray-position = right
 ;tray-padding = 2
@@ -67,14 +67,15 @@ cursor-click = pointer
 cursor-scroll = ns-resize
 
 [bar/mybar]
-modules-left = workspaces mpd
-modules-center = date
-modules-right = pulseaudio network cpu memory gpu
+modules-left = left workspaces separator mpd right
+modules-center = left date right
+modules-right = left pulseaudio separator network separator specs right
 inherit = bars
 
 [module/mpd]
 type = internal/mpd
 format-online =  <icon-prev>  <icon-stop>  <toggle>  <icon-next>  <label-song>    
+format-online-background = ${colors.background}
 
 icon-play = 
 icon-pause = 
@@ -86,28 +87,37 @@ label-song-maxlen = 100
 label-song-ellipsis = true
 label-active-font = 4
 
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-label = %percentage:2%%
-label-active-font = 3
-
-[module/gpu]
+[module/specs]
 type = custom/script
-exec = ~/.config/polybar/scripts/system-nvidia-smi.sh
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-label-active-font = 3
-
-[module/memory]
-type = internal/memory
 interval = 2
-format-prefix = " "
+exec = ~/.config/polybar/scripts/specs.sh
+format-prefix = ""
 format-prefix-foreground = ${colors.foreground-alt}
-label = %percentage_used%%
 label-active-font = 3
+format-background = ${colors.background}
+
+;;[module/cpu]
+;;type = internal/cpu
+;;interval = 2
+;;format-prefix = " "
+;;format-prefix-foreground = ${colors.foreground-alt}
+;;label = %percentage:2%%
+;;label-active-font = 3
+;;
+;;[module/gpu]
+;;type = custom/script
+;;exec = ~/.config/polybar/scripts/system-nvidia-smi.sh
+;;format-prefix = " "
+;;format-prefix-foreground = ${colors.foreground-alt}
+;;label-active-font = 3
+;;
+;;[module/memory]
+;;type = internal/memory
+;;interval = 2
+;;format-prefix = " "
+;;format-prefix-foreground = ${colors.foreground-alt}
+;;label = %percentage_used%%
+;;label-active-font = 3
 
 [module/date]
 type = internal/date
@@ -120,6 +130,7 @@ time = %H:%M
 time-alt = 
 
 label = %date% %time%
+format-background = ${colors.background}
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -143,6 +154,7 @@ bar-volume-empty = ─
 bar-volume-empty-font = 3
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
+format-volume-background = ${colors.background}
 
 [module/workspaces]
 type = internal/xworkspaces
@@ -170,14 +182,14 @@ format-padding = 1
 
 label-monitor = %name%
 
-label-active = " ●"
+label-active = " "
 label-active-foreground = ${colors.secondary}
 
-label-empty = " ○"
-label-empty-foregound = ${colors.primary}
+label-empty = " "
+label-empty-foreground = ${colors.foreground}
 
-label-occupied = " ●"
-label-occupied-foreground = ${colors.primary}
+label-occupied = " "
+label-occupied-foreground = ${colors.secondary}
 
 label-active-padding = 2
 label-urgent-padding = 2
@@ -185,11 +197,36 @@ label-occupied-padding = 2
 label-empty-padding = 2
 label-separator = |
 
+format-background = ${colors.background}
+
 [module/network]
 type = internal/network
 interface = wlan0 
 interval = 1.0
 label-connected = " %downspeed%   %upspeed%"
 label-disconnected = disconnected
+
+format-connected-background = ${colors.background}
+
+[module/left]
+type = custom/text
+content-background = #00000000
+content-foreground = ${colors.background}
+content = ""
+content-font = 5
+
+[module/right]
+type = custom/text
+content-background = #00000000
+content-foreground = ${colors.background}
+content = ""
+content-font = 5
+
+[module/separator]
+type = custom/text
+content-background = #00000000
+content-foreground = ${colors.background}
+content = " "
+content-font = 5
 
 ; vim:ft=dosini

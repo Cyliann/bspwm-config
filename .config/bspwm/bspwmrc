@@ -14,6 +14,8 @@ bspc config initial_polarity first_child # make new windows go on top of the tre
 bspc config automatic_scheme spiral
 bspc config ignore_ewmh_focus true # don't jump to browser when clicking links
 
+bspc rule -a Zathura state=tiled
+
 ## Autostart ##
 $HOME/.scripts/randwal & # script for random wallpaper with wpgtk
 betterlockscreen -l blur &
@@ -26,6 +28,7 @@ setxkbmap -layout pl &
 dunst &
 brave &
 discord &
+pgrep bspswallow || bspswallow &
 
 if ! pgrep -x "redshift" > /dev/null 	#
 then																	# Starts redshift for location of Wroclaw 

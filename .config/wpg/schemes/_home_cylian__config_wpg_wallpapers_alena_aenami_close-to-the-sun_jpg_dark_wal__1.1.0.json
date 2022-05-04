@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/alena_aenami_close-to-the-sun.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0D2739",
+        "foreground": "#e4eafa",
+        "cursor": "#e4eafa"
+    },
+    "colors": {
+        "color0": "#0D2739",
+        "color1": "#A83442",
+        "color2": "#A05C60",
+        "color3": "#F89D60",
+        "color4": "#3E6682",
+        "color5": "#DC6152",
+        "color6": "#536D88",
+        "color7": "#abb0bc",
+        "color8": "#154262",
+        "color9": "#e8354a",
+        "color10": "#e0676e",
+        "color11": "#ffc766",
+        "color12": "#4486b5",
+        "color13": "#ff6e56",
+        "color14": "#5d8dbf",
+        "color15": "#e4eafa"
+    }
+}

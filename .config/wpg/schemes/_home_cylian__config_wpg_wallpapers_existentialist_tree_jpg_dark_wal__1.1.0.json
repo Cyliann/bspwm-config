@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/existentialist_tree.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#091013",
+        "foreground": "#ffffea",
+        "cursor": "#ffffea"
+    },
+    "colors": {
+        "color0": "#091013",
+        "color1": "#A3512F",
+        "color2": "#7A847B",
+        "color3": "#D99B65",
+        "color4": "#9A6A59",
+        "color5": "#A59D91",
+        "color6": "#AE9375",
+        "color7": "#eddfca",
+        "color8": "#182c35",
+        "color9": "#e1632f",
+        "color10": "#8ebc92",
+        "color11": "#ffc86e",
+        "color12": "#d78263",
+        "color13": "#ead0a8",
+        "color14": "#f5c085",
+        "color15": "#ffffea"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/alena_aenami_eclipse.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#090914",
+        "foreground": "#ffc8cc",
+        "cursor": "#ffc8cc"
+    },
+    "colors": {
+        "color0": "#090914",
+        "color1": "#AB4C47",
+        "color2": "#753541",
+        "color3": "#AD6159",
+        "color4": "#654049",
+        "color5": "#953243",
+        "color6": "#944544",
+        "color7": "#d9979a",
+        "color8": "#171737",
+        "color9": "#ee544c",
+        "color10": "#a3394d",
+        "color11": "#f17062",
+        "color12": "#8d4859",
+        "color13": "#ce344e",
+        "color14": "#ce4b4a",
+        "color15": "#ffc8cc"
+    }
+}

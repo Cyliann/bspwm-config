@@ -1,10 +1,6 @@
-#
-# wm independent hotkeys
-#
-
 # terminal emulator
 super + Return
-  alacritty
+  alacritty 
 
   #rofi -run-command "/bin/zsh -i -c '{cmd}'" -show drun -show-icons -theme-str 'window \{width: 35%;\}'
 # program launcher
@@ -40,7 +36,7 @@ super + m
 super + space
 	bspc node -t {floating,tiled}
 
-# toggle fulscreen
+# toggle fullscreen
 super + f
   bspc node -t \~fullscreen
 
@@ -189,6 +185,7 @@ Print
 super + Print
 	flameshot full -c
 
+
 XF86Calculator
 	rofi -show calc -modi calc -no-show-match -no-sort -theme-str 'window \{width: 35%;\}'
 
@@ -203,3 +200,6 @@ XF86AudioPrev
 
 XF86AudioStop
 	mpc stop
+
+super + g
+  networkmanager_dmenu

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/cliff.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0c0e0c",
+        "foreground": "#fbffff",
+        "cursor": "#fbffff"
+    },
+    "colors": {
+        "color0": "#0c0e0c",
+        "color1": "#CFD3D6",
+        "color2": "#585E59",
+        "color3": "#BAC1C3",
+        "color4": "#778079",
+        "color5": "#9AA2A3",
+        "color6": "#6C8B94",
+        "color7": "#e4e8ea",
+        "color8": "#222922",
+        "color9": "#e1ffff",
+        "color10": "#66856b",
+        "color11": "#d9ffff",
+        "color12": "#8ab694",
+        "color13": "#b3e2e8",
+        "color14": "#7bbdd0",
+        "color15": "#fbffff"
+    }
+}

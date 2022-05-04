@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/alena_aenami_lost-dream.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#120d12",
+        "foreground": "#fcf7ff",
+        "cursor": "#fcf7ff"
+    },
+    "colors": {
+        "color0": "#120d12",
+        "color1": "#CC6648",
+        "color2": "#9C584F",
+        "color3": "#EE9D67",
+        "color4": "#656F95",
+        "color5": "#8B788B",
+        "color6": "#7887B0",
+        "color7": "#c1bdc7",
+        "color8": "#2f212f",
+        "color9": "#ff7a4b",
+        "color10": "#da6657",
+        "color11": "#ffc76f",
+        "color12": "#7386d1",
+        "color13": "#c58bc5",
+        "color14": "#88a6f7",
+        "color15": "#fcf7ff"
+    }
+}
