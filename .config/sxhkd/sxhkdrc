@@ -203,4 +203,4 @@ super + g
 
 # Toggle Telegram
 super + t
-   bspwm-toggle-visibility TelegramDesktop telegram-desktop
+  ~/.scripts/bspwm-toggle-visibility TelegramDesktop telegram-desktop
