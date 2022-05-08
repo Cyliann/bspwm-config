@@ -23,6 +23,7 @@ alias lsa='colorls -A'
 alias lsl='colorls -l'
 alias record='ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.00 ~/output.mp4'
 alias his='history 1'
+alias dot='cd .dotfiles'
 
 # Set PATH so it includes user's private bin directories
 set PATH "$HOME/.scripts:$PATH"

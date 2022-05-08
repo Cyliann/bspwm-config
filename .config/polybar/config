@@ -18,7 +18,7 @@
 
 [global/wm]
 margin-top = 0
-margin-bottom = 10
+margin-bottom = 0
 
 [colors]
 background = ${xrdb:color0:#222}
@@ -32,7 +32,7 @@ alert = ${xrdb:color3:#222}
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 98%
 height = 26
-offset-x = 0.75%
+offset-x = 1%
 offset-y = 1%
 radius = 9.0
 fixed-center = true
@@ -155,6 +155,7 @@ bar-volume-empty-font = 3
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
 format-volume-background = ${colors.background}
+format-muted-background = ${colors.background}
 
 [module/workspaces]
 type = internal/xworkspaces
@@ -207,6 +208,7 @@ label-connected = " %downspeed%   %upspeed%"
 label-disconnected = disconnected
 
 format-connected-background = ${colors.background}
+format-disconnected-background = ${colors.background}
 
 [module/left]
 type = custom/text

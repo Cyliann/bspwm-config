@@ -80,9 +80,6 @@ super + y
 #super + {p,b,comma,period}
 #	bspc node -f @{parent,brother,first,second}
 #
-## focus the next/previous window in the current desktop
-#super + {_,shift + }c
-#	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous window in the current desktop
 super + {k,j}
@@ -115,8 +112,8 @@ super + {1-7}
 #
 
 # preselect the direction
-super + alt + {h,j,k,l}
-	bspc node -p {west,south,north,east}
+#super + alt + {h,j,k,l}
+#	bspc node -p {west,south,north,east}
 
 ## preselect the ratio
 #super + ctrl + {1-9}
@@ -178,17 +175,6 @@ XF86AudioRaiseVolume
 XF86AudioMute
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
-Print
-	flameshot gui -c
-#	maim -s -u | xclip -selection clipboard -t image/png -i
-
-super + Print
-	flameshot full -c
-
-
-XF86Calculator
-	rofi -show calc -modi calc -no-show-match -no-sort -theme-str 'window \{width: 35%;\}'
-
 XF86AudioPlay
 	mpc toggle
 
@@ -201,5 +187,20 @@ XF86AudioPrev
 XF86AudioStop
 	mpc stop
 
+# Misc
+Print
+	flameshot gui -c
+#	maim -s -u | xclip -selection clipboard -t image/png -i
+
+super + Print
+	flameshot full -c
+
+XF86Calculator
+	rofi -show calc -modi calc -no-show-match -no-sort -theme-str 'window \{width: 35%;\}'
+
 super + g
   networkmanager_dmenu
+
+# Toggle Telegram
+super + t
+   bspwm-toggle-visibility TelegramDesktop telegram-desktop
