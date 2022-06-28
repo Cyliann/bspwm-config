@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/walchensee.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0f0f0f",
+        "foreground": "#fcffff",
+        "cursor": "#fcffff"
+    },
+    "colors": {
+        "color0": "#0f0f0f",
+        "color1": "#A6C3CC",
+        "color2": "#6D949F",
+        "color3": "#D38E5F",
+        "color4": "#5E7B84",
+        "color5": "#93A8AD",
+        "color6": "#52C1D5",
+        "color7": "#e0e4e5",
+        "color8": "#282828",
+        "color9": "#bfffff",
+        "color10": "#7ccae0",
+        "color11": "#ffb467",
+        "color12": "#6ba7ba",
+        "color13": "#aae7f5",
+        "color14": "#57ffff",
+        "color15": "#fcffff"
+    }
+}

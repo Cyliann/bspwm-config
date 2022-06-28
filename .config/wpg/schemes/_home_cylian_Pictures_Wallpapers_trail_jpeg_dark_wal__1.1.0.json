@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/cylian/Pictures/Wallpapers/trail.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0d0b",
+        "foreground": "#bcbdaf",
+        "cursor": "#bcbdaf"
+    },
+    "colors": {
+        "color0": "#0d0d0b",
+        "color1": "#3B3E41",
+        "color2": "#423F41",
+        "color3": "#3E4244",
+        "color4": "#4C4B4C",
+        "color5": "#69635E",
+        "color6": "#887670",
+        "color7": "#bcbdaf",
+        "color8": "#83847a",
+        "color9": "#3B3E41",
+        "color10": "#423F41",
+        "color11": "#3E4244",
+        "color12": "#4C4B4C",
+        "color13": "#69635E",
+        "color14": "#887670",
+        "color15": "#bcbdaf"
+    }
+}

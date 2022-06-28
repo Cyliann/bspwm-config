@@ -19,8 +19,8 @@ padding_left=0
 # Only set this if the geometries are wrong or ncmpcpp shouts at you to do it.
 # Visually select/highlight a character on your terminal, zoom in an image 
 # editor and count how many pixels a character's width and height are.
-font_height=
-font_width=
+font_height=12
+font_width=10
 
 main() {
     kill_previous_instances >/dev/null 2>&1

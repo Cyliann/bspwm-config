@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/cylian/Pictures/Wallpapers/cold_lake.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0F1416",
+        "foreground": "#d0d9dd",
+        "cursor": "#d0d9dd"
+    },
+    "colors": {
+        "color0": "#0F1416",
+        "color1": "#877777",
+        "color2": "#627885",
+        "color3": "#758C97",
+        "color4": "#8B9FA9",
+        "color5": "#95AAB5",
+        "color6": "#A8BBC4",
+        "color7": "#d0d9dd",
+        "color8": "#91979a",
+        "color9": "#877777",
+        "color10": "#627885",
+        "color11": "#758C97",
+        "color12": "#8B9FA9",
+        "color13": "#95AAB5",
+        "color14": "#A8BBC4",
+        "color15": "#d0d9dd"
+    }
+}

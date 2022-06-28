@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/cylian/Pictures/Wallpapers/misty_forest.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181c1e",
+        "foreground": "#f5eddf",
+        "cursor": "#f5eddf"
+    },
+    "colors": {
+        "color0": "#181c1e",
+        "color1": "#79807F",
+        "color2": "#A28B71",
+        "color3": "#C4A37B",
+        "color4": "#A5988A",
+        "color5": "#D0B295",
+        "color6": "#EBCFB2",
+        "color7": "#f5eddf",
+        "color8": "#aba59c",
+        "color9": "#79807F",
+        "color10": "#A28B71",
+        "color11": "#C4A37B",
+        "color12": "#A5988A",
+        "color13": "#D0B295",
+        "color14": "#EBCFB2",
+        "color15": "#f5eddf"
+    }
+}

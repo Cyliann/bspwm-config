@@ -13,3 +13,14 @@ fi
 wpg -s $path
 wal -i $path
 betterlockscreen -u $path --fx blur
+
+## Update bspwm colors
+. "${HOME}/.cache/wal/colors.sh"
+bspc config normal_border_color "$color0"
+bspc config active_border_color "$color2"
+bspc config focused_border_color "$color2"
+bspc config presel_feedback_color "$color1"
+
+## Update BetterDiscord theme
+#pywal-discord -t default
+wal-discord -t

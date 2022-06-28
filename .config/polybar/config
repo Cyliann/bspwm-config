@@ -74,7 +74,7 @@ inherit = bars
 
 [module/mpd]
 type = internal/mpd
-format-online =  <icon-prev>  <icon-stop>  <toggle>  <icon-next>  <label-song>    
+format-online =  <icon-prev>  <icon-stop>  <toggle>  <icon-next>  <label-song>
 format-online-background = ${colors.background}
 
 icon-play = 
@@ -202,7 +202,7 @@ format-background = ${colors.background}
 
 [module/network]
 type = internal/network
-interface = wlan0 
+interface = wlan0
 interval = 1.0
 label-connected = " %downspeed%   %upspeed%"
 label-disconnected = disconnected

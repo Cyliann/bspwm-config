@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/dambovicioara.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0f0d0b",
+        "foreground": "#fffbfb",
+        "cursor": "#fffbfb"
+    },
+    "colors": {
+        "color0": "#0f0d0b",
+        "color1": "#904D27",
+        "color2": "#3B4240",
+        "color3": "#90847B",
+        "color4": "#595454",
+        "color5": "#887670",
+        "color6": "#726C6E",
+        "color7": "#c4c0c0",
+        "color8": "#2c261f",
+        "color9": "#c76026",
+        "color10": "#445d56",
+        "color11": "#cca98e",
+        "color12": "#7e6262",
+        "color13": "#c09181",
+        "color14": "#a27e8a",
+        "color15": "#fffbfb"
+    }
+}

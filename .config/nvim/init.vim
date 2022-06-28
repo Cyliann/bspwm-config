@@ -42,7 +42,7 @@ set statusline+=\ [%c]
 
 "Color settings
 colorscheme wal
-
+let g:limelight_conceal_ctermfg = 'gray'
 
 " Make vim-pandoc-syntax work as standalone plugin
 augroup pandoc_syntax
