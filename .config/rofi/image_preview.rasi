@@ -1,7 +1,6 @@
 configuration {
 modi: "window,drun,run";
 display-drun: "";
-show-icons: true;
 }
 
 * {
@@ -23,7 +22,7 @@ window {
     border-radius: 6;
     border-color: @bordercolor;
     padding:          5;
-    width: 35%;
+    width: 50%;
 }
 mainbox {
     border:  0;
@@ -38,8 +37,12 @@ textbox {
     text-color: @foreground;
 }
 
+element {
+	children: [element-icon, element-text];
+}
+
 element-icon { 
-	size: 1.65ch; 
+	size: 2em; 
 }
 
 @import "~/.cache/wal/colors-rofi-dark.rasi"

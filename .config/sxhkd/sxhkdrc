@@ -4,7 +4,7 @@ super + Return
 
 # program launcher
 super + {r}
-	rofi -show drun -show-icons -theme-str 'window \{width: 35%;\}'
+	rofi -show drun -show-icons 
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -198,10 +198,10 @@ super + Print
 	flameshot full -c
 
 XF86Calculator
-	rofi -show calc -modi calc -no-show-match -no-sort -theme-str 'window \{width: 35%;\}'
+	rofi -show calc -modi calc -no-show-match -no-sort 
 
 super + c
-	rofi -show calc -modi calc -no-show-match -no-sort -theme-str 'window \{width: 35%;\}'
+	rofi -show calc -modi calc -no-show-match -no-sort
 
 super + g
   networkmanager_dmenu

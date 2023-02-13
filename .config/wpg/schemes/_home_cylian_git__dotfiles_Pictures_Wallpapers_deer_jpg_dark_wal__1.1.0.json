@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/cylian/git/.dotfiles/Pictures/Wallpapers/deer.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#110f10",
+        "foreground": "#dbdcdf",
+        "cursor": "#dbdcdf"
+    },
+    "colors": {
+        "color0": "#110f10",
+        "color1": "#7A8590",
+        "color2": "#989CA4",
+        "color3": "#D5C4AB",
+        "color4": "#9DADC2",
+        "color5": "#B2BBCA",
+        "color6": "#BCC2CC",
+        "color7": "#dbdcdf",
+        "color8": "#999a9c",
+        "color9": "#7A8590",
+        "color10": "#989CA4",
+        "color11": "#D5C4AB",
+        "color12": "#9DADC2",
+        "color13": "#B2BBCA",
+        "color14": "#BCC2CC",
+        "color15": "#dbdcdf"
+    }
+}
