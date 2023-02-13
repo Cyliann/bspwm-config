@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/cylian/Pictures/Wallpapers/forest.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#021110",
+        "foreground": "#bfcbb3",
+        "cursor": "#bfcbb3"
+    },
+    "colors": {
+        "color0": "#021110",
+        "color1": "#2D6354",
+        "color2": "#4E7151",
+        "color3": "#428568",
+        "color4": "#619369",
+        "color5": "#B1A244",
+        "color6": "#90A96C",
+        "color7": "#bfcbb3",
+        "color8": "#858e7d",
+        "color9": "#2D6354",
+        "color10": "#4E7151",
+        "color11": "#428568",
+        "color12": "#619369",
+        "color13": "#B1A244",
+        "color14": "#90A96C",
+        "color15": "#bfcbb3"
+    }
+}

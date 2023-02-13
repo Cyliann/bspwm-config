@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/rettarfell.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#101312",
+        "foreground": "#f5faff",
+        "cursor": "#f5faff"
+    },
+    "colors": {
+        "color0": "#101312",
+        "color1": "#5D6864",
+        "color2": "#798556",
+        "color3": "#8C9462",
+        "color4": "#3D5985",
+        "color5": "#5F718D",
+        "color6": "#7786A3",
+        "color7": "#c8ccd8",
+        "color8": "#262e2b",
+        "color9": "#6c9385",
+        "color10": "#a4bb61",
+        "color11": "#c0d06f",
+        "color12": "#4270b9",
+        "color13": "#6c8fc6",
+        "color14": "#88a8e6",
+        "color15": "#f5faff"
+    }
+}

@@ -27,10 +27,11 @@ xsetroot -cursor_name left_ptr &
 unclutter &
 xset -b & # turns motherboard speaker off
 setxkbmap -layout pl &
+fcitx5 -d &
 dunst &
 brave &
 discord &
-pgrep bspswallow || bspswallow &
+pgrep bspswallow || $HOME/.scripts/bspswallow &
 
 if ! pgrep -x "redshift" > /dev/null 	#
 then																	# Starts redshift for location of Wroclaw 
@@ -49,6 +50,7 @@ bspc rule -a Pcmanfm state=tiled border=on
 bspc rule -a rpv state=pseudo-tiled
 bspc rule -a Brave-browser desktop='^2' state=tiled layout=monocle
 bspc rule -a discord desktop=3 state=tiled layout=monocle
+bspc rule -a neovide state=fullscreen
 bspc desktop '^2' -l monocle
 bspc desktop '^3' -l monocle
 

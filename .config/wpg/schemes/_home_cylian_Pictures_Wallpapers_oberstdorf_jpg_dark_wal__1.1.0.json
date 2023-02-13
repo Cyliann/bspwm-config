@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/cylian/Pictures/Wallpapers/oberstdorf.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#07110E",
+        "foreground": "#eceae4",
+        "cursor": "#eceae4"
+    },
+    "colors": {
+        "color0": "#07110E",
+        "color1": "#2D4D48",
+        "color2": "#596051",
+        "color3": "#978054",
+        "color4": "#B9BFB6",
+        "color5": "#D7D7CB",
+        "color6": "#E0DFD1",
+        "color7": "#eceae4",
+        "color8": "#a5a39f",
+        "color9": "#2D4D48",
+        "color10": "#596051",
+        "color11": "#978054",
+        "color12": "#B9BFB6",
+        "color13": "#D7D7CB",
+        "color14": "#E0DFD1",
+        "color15": "#eceae4"
+    }
+}

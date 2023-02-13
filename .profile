@@ -1,4 +1,4 @@
-#Startx Automatically
+# Startx Automatically
 [[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx -- vt1 &> /dev/null
 
 if [ -n "$DESKTOP_SESSION" ];then					#
@@ -7,4 +7,6 @@ if [ -n "$DESKTOP_SESSION" ];then					#
 fi
 
 # Set PATH so it includes user's private bin directories
-set PATH "$HOME/.scripts:$PATH"
+set PATH "$HOME/.scripts:$HOME/.local/bin:$PATH"
+
+export QT_QPA_PLATFORMTHEME=gtk3

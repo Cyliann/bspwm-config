@@ -10,10 +10,10 @@ alias ..='cd ..'
 alias ls='ls -CF --color=auto'
 alias grep='grep --color=auto'
 alias gimme='sudo pacman -S'
-alias yeet='paru -Rs'
+alias yeet='paru -Rns'
 alias maria-db='sudo /opt/lampp/bin/mysql -u root'
 alias md='mkdir'
-alias v='nvim'
+alias v='neovide'
 alias cat='bat'
 alias sudo='sudo '
 alias music='~/.ncmpcpp/ncmpcpp-ueberzug/ncmpcpp-ueberzug'
@@ -25,9 +25,5 @@ alias record='ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.00 ~/o
 alias his='history 1'
 alias dot='cd .dotfiles'
 alias mu='~/.scripts/muclic.py'
-
-# Set PATH so it includes user's private bin directories
-set PATH "$HOME/.scripts:$PATH"
-set PATH "$HOME/.local/bin:$PATH"
-
-
+alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings'
+alias yarn='yarn --use-yarnrc $XDG_CONFIG_HOME/yarn/config'

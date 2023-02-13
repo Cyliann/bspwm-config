@@ -1,17 +1,18 @@
 #!/bin/bash
 
-files=(~/Pictures/Wallpapers/*)
-
 if [ -z "$1" ]
 then
+	files=($HOME/Pictures/Wallpapers/*)
 	path=${files[RANDOM % ${#files[@]}]}
 else
-	path=$1
+	path=`readlink -f $1`
 fi
 
-#feh --bg-fill $path
+echo $path
+
+feh --bg-fill --no-fehbg $path 
 wpg -s $path
-wal -i $path
+#wal -i $path
 betterlockscreen -u $path --fx blur
 
 ## Update bspwm colors
@@ -20,7 +21,3 @@ bspc config normal_border_color "$color0"
 bspc config active_border_color "$color2"
 bspc config focused_border_color "$color2"
 bspc config presel_feedback_color "$color1"
-
-## Update BetterDiscord theme
-#pywal-discord -t default
-wal-discord -t

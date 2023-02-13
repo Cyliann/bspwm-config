@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/forest.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#021110",
+        "foreground": "#fbffeb",
+        "cursor": "#fbffeb"
+    },
+    "colors": {
+        "color0": "#021110",
+        "color1": "#4E7151",
+        "color2": "#428568",
+        "color3": "#B1A244",
+        "color4": "#2D6354",
+        "color5": "#90A96C",
+        "color6": "#619369",
+        "color7": "#bfcbb3",
+        "color8": "#04403c",
+        "color9": "#599f5f",
+        "color10": "#48b988",
+        "color11": "#f6de48",
+        "color12": "#318a71",
+        "color13": "#beed7a",
+        "color14": "#6ece7d",
+        "color15": "#fbffeb"
+    }
+}

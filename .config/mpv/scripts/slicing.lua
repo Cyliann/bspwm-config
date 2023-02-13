@@ -13,14 +13,9 @@ local o = {
     hqvf = "",
     postvf = "",
     opts = "",
-    ext = "avi",
-    command_template = [[
-        ffmpeg -v warning -y -stats
-        -ss $shift -i "$in" -t $duration
-        -c:v $vcodec -c:a $acodec $audio
-        -vf $prevf$vf$postvf $opts "$out.$ext"
-    ]],
-}
+    ext = "mp4",
+    command_template = [[ffmpeg -ss $shift -t $duration -i "$in" -c copy "$out.$ext" ]],
+  }
 options.read_options(o)
 
 function timestamp(duration)

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/cylian/Pictures/Wallpapers/forest_river.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#090d06",
+        "foreground": "#d5d6d7",
+        "cursor": "#d5d6d7"
+    },
+    "colors": {
+        "color0": "#090d06",
+        "color1": "#636654",
+        "color2": "#84795C",
+        "color3": "#7D8260",
+        "color4": "#9C8536",
+        "color5": "#8C8E6D",
+        "color6": "#A5A79E",
+        "color7": "#d5d6d7",
+        "color8": "#959596",
+        "color9": "#636654",
+        "color10": "#84795C",
+        "color11": "#7D8260",
+        "color12": "#9C8536",
+        "color13": "#8C8E6D",
+        "color14": "#A5A79E",
+        "color15": "#d5d6d7"
+    }
+}

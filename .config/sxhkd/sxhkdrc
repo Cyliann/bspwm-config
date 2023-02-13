@@ -2,7 +2,6 @@
 super + Return
   alacritty 
 
-  #rofi -run-command "/bin/zsh -i -c '{cmd}'" -show drun -show-icons -theme-str 'window \{width: 35%;\}'
 # program launcher
 super + {r}
 	rofi -show drun -show-icons -theme-str 'window \{width: 35%;\}'
@@ -151,6 +150,9 @@ super + shift + {Left,Down,Up,Right}
 super + w
 	~/.scripts/randwal
 
+super + shift + w
+  ~/.scripts/select_wallpaper
+
 super + p
 	alacritty -e ~/.ncmpcpp/ncmpcpp-ueberzug/ncmpcpp-ueberzug
 
@@ -198,8 +200,14 @@ super + Print
 XF86Calculator
 	rofi -show calc -modi calc -no-show-match -no-sort -theme-str 'window \{width: 35%;\}'
 
+super + c
+	rofi -show calc -modi calc -no-show-match -no-sort -theme-str 'window \{width: 35%;\}'
+
 super + g
   networkmanager_dmenu
+
+ctrl + shift + r
+	{ffscreencast, bash -c 'killall ffmpeg'}
 
 # Toggle Telegram
 super + t

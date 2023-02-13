@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# [ -n "$1" ] && wallpaper_path="$1"
+
+wallpaper_dir="$HOME/Pictures/Wallpapers/"
+wallpaper="$(ls $wallpaper_dir | while read A; do echo -en "$A\x00icon\x1f$wallpaper_dir$A\n"; done | rofi -dmenu -p "")"
+
+echo $wallpaper
+
+if [ -z "$wallpaper" ]
+then
+  exit
+else
+  $HOME/.scripts/randwal "${wallpaper_dir}${wallpaper}"
+fi

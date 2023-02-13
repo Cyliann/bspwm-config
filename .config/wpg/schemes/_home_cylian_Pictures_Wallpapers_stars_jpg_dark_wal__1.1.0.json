@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/cylian/Pictures/Wallpapers/stars.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0B0B15",
+        "foreground": "#baa4a4",
+        "cursor": "#baa4a4"
+    },
+    "colors": {
+        "color0": "#0B0B15",
+        "color1": "#64443A",
+        "color2": "#383043",
+        "color3": "#523845",
+        "color4": "#633D46",
+        "color5": "#5F444E",
+        "color6": "#6B484D",
+        "color7": "#baa4a4",
+        "color8": "#827272",
+        "color9": "#64443A",
+        "color10": "#383043",
+        "color11": "#523845",
+        "color12": "#633D46",
+        "color13": "#5F444E",
+        "color14": "#6B484D",
+        "color15": "#baa4a4"
+    }
+}
