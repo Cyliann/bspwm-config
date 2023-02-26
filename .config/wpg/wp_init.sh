@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-wpg -nrs '/home/cylian/git/.dotfiles/Pictures/Wallpapers/dambovicioara.jpg' '/home/cylian/git/.dotfiles/Pictures/Wallpapers/dambovicioara.jpg'
+wpg -nrs '/home/cylian/Pictures/Wallpapers/alena_aenami_lines.jpg' '/home/cylian/Pictures/Wallpapers/alena_aenami_lines.jpg'

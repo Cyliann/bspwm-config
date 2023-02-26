@@ -1,48 +1,32 @@
-configuration {
-modi: "window,drun,run";
-display-drun: "";
-}
-
-* {
-    font: "Agave Nerd Font 11";
-    text-color: #f8f8f2;
-    background-color: #282a36;
-    active-background: #6272a4;
-    urgent-background: #ff5555;
-    selected-background: @active-background;
-    selected-urgent-background: @urgent-background;
-    selected-active-background: @active-background;
-    separatorcolor: @active-background;
-    bordercolor: @active-background;
-}
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+@import "~/.config/rofi/config.rasi"
 
 window {
-    background-color: @background;
-    border:           1;
-    border-radius: 6;
-    border-color: @bordercolor;
-    padding:          5;
+    y-offset: -100px;
     width: 50%;
+    height: 70%;
 }
-mainbox {
-    border:  0;
-    padding: 0;
+
+inputbar {
+    padding:    20px;
 }
-message {
-    border:       1px dash 0px 0px ;
-    border-color: @separatorcolor;
-    padding:      1px ;
+
+prompt, entry, element-icon, element-text {
+    vertical-align: 0.5;
 }
+
 textbox {
-    text-color: @foreground;
+    padding:            8px;
 }
 
 element {
 	children: [element-icon, element-text];
+    padding:    16px;
 }
 
-element-icon { 
-	size: 2em; 
+element-icon {
+    padding:                        -40px 0px;
+    border:                         4px 4px solid 4px 4px;
+    border-radius:                  10;
+    size:                           180;
 }
-
-@import "~/.cache/wal/colors-rofi-dark.rasi"

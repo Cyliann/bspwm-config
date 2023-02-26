@@ -1,9 +1,7 @@
 sw_volume: 80
 audio_device_state:1:pulse audio
 audio_device_state:1:toggle_visualizer
-state: pause
-current: 5
-time: 146.668000
+state: stop
 random: 0
 repeat: 0
 single: 0
@@ -12,10 +10,4 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:King Crimson/In The Court Of The Crimson King/King Crimson - 21st Century Schizoid Man.m4a
-1:King Crimson/In The Court Of The Crimson King/King Crimson - I Talk To The Wind.m4a
-2:King Crimson/In The Court Of The Crimson King/King Crimson - Epitaph.m4a
-3:King Crimson/In The Court Of The Crimson King/King Crimson - Moonchild.m4a
-4:King Crimson/In The Court Of The Crimson King/King Crimson - The Court Of The Crimson King.m4a
-5:King Crimson/In The Court Of The Crimson King/King Crimson - A Man A City.m4a
 playlist_end
