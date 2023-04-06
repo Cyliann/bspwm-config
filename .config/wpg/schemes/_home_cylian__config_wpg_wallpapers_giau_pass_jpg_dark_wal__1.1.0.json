@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cylian/.config/wpg/wallpapers/giau_pass.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#19100e",
+        "foreground": "#fff6fc",
+        "cursor": "#fff6fc"
+    },
+    "colors": {
+        "color0": "#19100e",
+        "color1": "#8C8184",
+        "color2": "#E4B4AD",
+        "color3": "#FDCE97",
+        "color4": "#FBD3B0",
+        "color5": "#A992A7",
+        "color6": "#D7B5C9",
+        "color7": "#e6d8dd",
+        "color8": "#39241f",
+        "color9": "#c796a3",
+        "color10": "#ffd1c2",
+        "color11": "#ffffa5",
+        "color12": "#fffab8",
+        "color13": "#f0a9e9",
+        "color14": "#ffcfff",
+        "color15": "#fff6fc"
+    }
+}

@@ -37,8 +37,7 @@ bindkey -e
 
 # Custom Variables
 EDITOR=nvim
-path+=$HOME/.scripts
-export PATH
+export PATH="$PATH:$HOME/.scripts/:$HOME/.local/share/cargo/bin/"
 
 ## Load pure theme
 fpath+=$HOME/.config/zsh/pure

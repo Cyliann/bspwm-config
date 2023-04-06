@@ -1,7 +1,9 @@
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
 configuration {
-modi: "window,drun,run";
-display-drun: "";
-show-icons: true;
+    modi: "window,drun,run";
+    display-drun: "";
+    show-icons: true;
 }
 
 * {
@@ -25,15 +27,18 @@ window {
     padding:          5;
     width: 35%;
 }
+
 mainbox {
     border:  0;
     padding: 0;
 }
+
 message {
     border:       1px dash 0px 0px ;
     border-color: @separatorcolor;
     padding:      1px ;
 }
+
 textbox {
     text-color: @foreground;
 }
@@ -41,5 +46,3 @@ textbox {
 element-icon { 
 	size: 1.65ch; 
 }
-
-@import "~/.cache/wal/colors-rofi-dark.rasi"

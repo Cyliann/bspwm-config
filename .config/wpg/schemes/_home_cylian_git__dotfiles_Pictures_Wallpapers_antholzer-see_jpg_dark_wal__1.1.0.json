@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/cylian/git/.dotfiles/Pictures/Wallpapers/antholzer-see.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0B1613",
+        "foreground": "#beb4b8",
+        "cursor": "#beb4b8"
+    },
+    "colors": {
+        "color0": "#0B1613",
+        "color1": "#4A3D45",
+        "color2": "#244856",
+        "color3": "#314950",
+        "color4": "#4C5151",
+        "color5": "#616166",
+        "color6": "#956038",
+        "color7": "#beb4b8",
+        "color8": "#857d80",
+        "color9": "#4A3D45",
+        "color10": "#244856",
+        "color11": "#314950",
+        "color12": "#4C5151",
+        "color13": "#616166",
+        "color14": "#956038",
+        "color15": "#beb4b8"
+    }
+}
