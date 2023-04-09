@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/cylian/Pictures/Wallpapers/lago_di_braies.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#090806",
+        "foreground": "#e0e3e6",
+        "cursor": "#e0e3e6"
+    },
+    "colors": {
+        "color0": "#090806",
+        "color1": "#564D48",
+        "color2": "#6D625C",
+        "color3": "#877469",
+        "color4": "#8D817C",
+        "color5": "#9B9595",
+        "color6": "#C0C3C7",
+        "color7": "#e0e3e6",
+        "color8": "#9c9ea1",
+        "color9": "#564D48",
+        "color10": "#6D625C",
+        "color11": "#877469",
+        "color12": "#8D817C",
+        "color13": "#9B9595",
+        "color14": "#C0C3C7",
+        "color15": "#e0e3e6"
+    }
+}

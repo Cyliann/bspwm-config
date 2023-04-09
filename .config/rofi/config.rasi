@@ -1,5 +1,3 @@
-@import "~/.cache/wal/colors-rofi-dark.rasi"
-
 configuration {
     modi: "window,drun,run";
     display-drun: "";
@@ -46,3 +44,5 @@ textbox {
 element-icon { 
 	size: 1.65ch; 
 }
+
+@import "~/.cache/wal/colors-rofi-dark.rasi"
