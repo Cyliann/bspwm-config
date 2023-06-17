@@ -82,7 +82,7 @@ empty_tag_marker = ""
 ## Needed for tag editor and file operations to work ##
 mpd_music_dir = ~/Music
 
-execute_on_song_change = "~/.ncmpcpp/ncmpcpp-ueberzug/ncmpcpp_cover_art.sh"
+execute_on_song_change = "~/.config/ncmpcpp/ncmpcpp-icat/ncmpcpp_cover_art.sh"
 
 ## Left side cover trick ##
 visualizer_look = "  "

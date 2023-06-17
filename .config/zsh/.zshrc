@@ -1,10 +1,8 @@
-(cat ~/.cache/wal/sequences &)
 source ~/.bashrc
 source ~/.profile
 source ~/.config/zsh/.zshenv
 
 # The following lines were added by compinstall
-
 zstyle ':completion:*' completer _expand _complete _ignored _approximate
 zstyle ':completion:*' file-sort modification
 zstyle ':completion:*' group-name ''

@@ -1,7 +1,7 @@
 # terminal emulator
 super + Return
-	alacritty
-
+	kitty -1
+	
 # program launcher
 super + {r}
 	rofi -show drun -show-icons 
@@ -154,7 +154,7 @@ super + shift + w
   ~/.scripts/select_wallpaper
 
 super + p
-	alacritty -e ~/.ncmpcpp/ncmpcpp-ueberzug/ncmpcpp-ueberzug
+	kitty ~/.config/ncmpcpp/ncmpcpp-icat/ncmpcpp-icat
 
 # Power management 
 super + ctrl + l
@@ -207,8 +207,12 @@ super + g
   networkmanager_dmenu
 
 ctrl + shift + r
-	{ffscreencast, bash -c 'killall ffmpeg'}
+	{bash -c "exec -a ffscreencast ffscreencast &", bash -c 'pkill -f ffscreencast'}
 
 # Toggle Telegram
 super + t
   ~/.scripts/bspwm-toggle-visibility TelegramDesktop telegram-desktop
+
+
+super + v
+	neovide

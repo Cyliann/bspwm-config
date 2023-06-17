@@ -3,17 +3,38 @@ return {
       "simrat39/rust-tools.nvim",
       "andweeb/presence.nvim",
       "jose-elias-alvarez/typescript.nvim",
-      { "olimorris/onedarkpro.nvim", lazy = false },
-      { "nyoom-engineering/oxocarbon.nvim", lazy = false },
+      "ThePrimeagen/vim-be-good",
+      { "jesseduffield/lazygit", enabled = false },
+      -- { "navarasu/onedark.nvim", lazy = false },
       { "notken12/base46-colors", lazy = false },
       { "nvim-treesitter/nvim-treesitter-context", lazy = false },
-      { "ThePrimeagen/vim-be-good" },
       { "lambdalisue/suda.vim", lazy = false },
       {
         "williamboman/mason-lspconfig.nvim",
         opts = {
           ensure_installed = { "rust_analyzer", "tsserver" }
         },
+      },
+      { 
+        "goolord/alpha-nvim", 
+        opts = function(_, opts) -- override the options using lazy.nvim
+          local header = { 
+            [[           ██╗   ██╗██╗███╗   ███╗            ]], 
+            [[           ██║   ██║██║████╗ ████║            ]], 
+            [[           ██║   ██║██║██╔████╔██║            ]], 
+            [[           ╚██╗ ██╔╝██║██║╚██╔╝██║            ]], 
+            [[            ╚████╔╝ ██║██║ ╚═╝ ██║            ]], 
+            [[             ╚═══╝  ╚═╝╚═╝     ╚═╝            ]], 
+            [[                                              ]], 
+            [[   ███████╗██╗   ██╗ ██████╗██╗  ██╗███████╗  ]],
+            [[   ██╔════╝██║   ██║██╔════╝██║ ██╔╝██╔════╝  ]],
+            [[   ███████╗██║   ██║██║     █████╔╝ ███████╗  ]],
+            [[   ╚════██║██║   ██║██║     ██╔═██╗ ╚════██║  ]],
+            [[   ███████║╚██████╔╝╚██████╗██║  ██╗███████║  ]],
+            [[   ╚══════╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝╚══════╝  ]],
+          }
+          opts.section.header.val = header -- change the header section value 
+          end    
       },
   },
 
