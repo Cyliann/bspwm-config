@@ -8,14 +8,6 @@ export $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg) &
 dbus-update-activation-environment --systemd DISPLAY &
 export SSH_AUTH_SOCK &
 
-# MPD daemon start (if no other user instance exists)
-[ ! -s ~/.config/mpd/pid ] && mpd
-
-easyeffects --gapplication-service &
-
-# Fix Pycharm grey screen
-export _JAVA_AWT_WM_NONREPARENTING=1
-
 # Borrowed from /etc/X11/xinit/xinitrc
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
@@ -49,7 +41,6 @@ fi
 
 # Keyboard layout
 setxkbmap -layout pl &
-xkbset sticky -twokey -latchlock & # set sticky keys
 
 # Start window manager
 exec bspwm

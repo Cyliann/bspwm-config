@@ -4,15 +4,15 @@
 # SETTINGS
 music_library="$HOME/Music"
 fallback_image="$HOME/.ncmpcpp/ncmpcpp-icat/img/fallback.png"
-padding_top=3
-padding_bottom=4
-padding_right=0
+padding_top=0
+padding_bottom=0
+padding_right=67
 max_width=0
-reserved_playlist_cols=30
+reserved_playlist_cols=0
 reserved_cols_in_percent="false"
 force_square="false"
 square_alignment="top"
-left_aligned="true"
+left_aligned="false"
 padding_left=0
 
 # Only set this if the geometries are wrong or ncmpcpp shouts at you to do it.
@@ -93,7 +93,7 @@ display_cover_image() {
 detect_window_resizes() {
 	{
 		trap 'display_cover_image' WINCH
-		while :; do sleep 5; done
+		while :; do sleep .1; done
 	} &
 }
 
@@ -107,7 +107,7 @@ compute_geometry() {
 		guess_font_size
 	fi
 
-	icat_height=$((term_lines / 2 - padding_top - padding_bottom))
+	icat_height=$((term_lines - padding_top - padding_bottom))
 	# Because Ueberzug uses characters as a unit we must multiply
 	# the line count (height) by the font size ratio in order to
 	# obtain an equivalent width in column count

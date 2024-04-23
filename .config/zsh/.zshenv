@@ -35,3 +35,6 @@ export ZDOTDIR="$HOME"/.config/zsh
 
 # fcitx support in terminal
 export GLFW_IM_MODULE=ibus
+
+# Golang
+export GOPATH=$HOME/.local/share/go

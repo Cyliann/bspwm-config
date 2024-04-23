@@ -25,9 +25,9 @@ compinit
 # End of lines added by compinstall
 
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTFILE=$XDG_CONFIG_HOME/zsh/histfile
+HISTSIZE=10000
+SAVEHIST=10000
 setopt autocd nomatch
 unsetopt beep
 bindkey -e
@@ -44,11 +44,6 @@ autoload -U promptinit
 promptinit
 prompt pure
 
-# Load. Should be last.
-source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
-source $HOME/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-
 # Keybindings
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
@@ -56,3 +51,15 @@ bindkey "^[[3~" delete-char
 
 # Set zcompdump directory
 compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+
+# Vim mode
+#set -o vi
+
+# Load. Should be last.
+source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
+#source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+source $HOME/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# Load zoxide
+eval "$(zoxide init zsh)"

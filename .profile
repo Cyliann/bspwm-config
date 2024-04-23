@@ -7,7 +7,7 @@ if [ -n "$DESKTOP_SESSION" ]; then    #
 fi
 
 # Set PATH so it includes user's private bin directories
-export PATH="$HOME/.scripts:$HOME/.local/bin:$PATH"
+export PATH="$HOME/.scripts:$HOME/.local/bin:$PATH:$GOPATH/bin"
 
 export QT_QPA_PLATFORMTHEME=gtk3
 
@@ -15,5 +15,5 @@ export QT_QPA_PLATFORMTHEME=gtk3
 (\cat ~/.cache/wal/sequences &)
 
 # Keyboard layout
-(xkbset st -twokey -latchlock &)
+# (xkbset st -twokey -latchlock &)
 (setxkbmap -layout pl)

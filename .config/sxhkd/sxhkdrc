@@ -84,6 +84,9 @@ super + y
 super + {k,j}
 	bspc node -f {next,prev}.local.!hidden.window
 
+alt + Tab
+	bspc node -f next.local.!hidden.window
+
 # focus the next/previous desktop in the current monitor
 super + {Left,Right}
 	bspc desktop -f {prev,next}.local
@@ -154,7 +157,7 @@ super + shift + w
   ~/.scripts/select_wallpaper
 
 super + p
-	kitty ~/.config/ncmpcpp/ncmpcpp-icat/ncmpcpp-icat
+	kitty --class "ncmpcpp" ~/.config/ncmpcpp/ncmpcpp-icat/ncmpcpp-icat
 
 # Power management 
 super + ctrl + l
@@ -164,7 +167,7 @@ super + ctrl + s
 	systemctl suspend
 
 super + s
-	~/.config/polybar/scripts/powermenu.sh
+	~/.scripts/powermenu.sh
 
 # Sound
 
@@ -206,13 +209,18 @@ super + c
 super + g
   networkmanager_dmenu
 
-ctrl + shift + r
-	{bash -c "exec -a ffscreencast ffscreencast &", bash -c 'pkill -f ffscreencast'}
+# ctrl + shift + r
+# 	{bash -c "exec -a ffscreencast ffscreencast &", bash -c 'pkill -f ffscreencast'}
 
 # Toggle Telegram
 super + t
   ~/.scripts/bspwm-toggle-visibility TelegramDesktop telegram-desktop
 
-
 super + v
 	neovide
+
+super + e
+	~/.scripts/watch
+
+alt + space
+	ibus engine shin

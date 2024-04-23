@@ -1,19 +1,59 @@
 return {
+  colorscheme = "onedark",
   plugins = {
       "simrat39/rust-tools.nvim",
       "andweeb/presence.nvim",
       "jose-elias-alvarez/typescript.nvim",
-      "ThePrimeagen/vim-be-good",
-      { "jesseduffield/lazygit", enabled = false },
-      -- { "navarasu/onedark.nvim", lazy = false },
-      { "notken12/base46-colors", lazy = false },
+      { "adishourya/base46", lazy = false },
       { "nvim-treesitter/nvim-treesitter-context", lazy = false },
       { "lambdalisue/suda.vim", lazy = false },
+      { "rose-pine/neovim", lazy = false },
+      { "mg979/vim-visual-multi", lazy = false },
+      {
+        "olexsmir/gopher.nvim",
+        ft = "go",
+        config = function(_, opts)
+          require("gopher").setup(opts)
+        end,
+        build = function()
+          vim.cmd [[silent! GoInstallDeps]]
+        end,
+      },
+      {
+        "iamcco/markdown-preview.nvim",
+        run = "cd app && npm install", 
+        setup = function() vim.g.mkdp_filetypes = { "markdown" } end, 
+        ft = { "markdown" },
+      },
       {
         "williamboman/mason-lspconfig.nvim",
         opts = {
-          ensure_installed = { "rust_analyzer", "tsserver" }
+          ensure_installed = { "rust_analyzer", "tsserver", "wgsl_analyzer" }
         },
+      },
+      {
+        "nvim-treesitter/nvim-treesitter",
+        opts = {
+          rainbow = {
+            enable = true,
+            highlight_middle = true,
+            max_file_lines = nil,
+            },
+          },
+      },
+      {
+        "L3MON4D3/LuaSnip",
+        config = function(plugin, opts)
+          -- include the default astronvim config that calls the setup call
+          require "plugins.configs.luasnip"(plugin, opts)
+          -- load snippets paths
+          require("luasnip.loaders.from_vscode").lazy_load {
+            -- this can be used if your configuration lives in ~/.config/nvim
+            -- if your configuration lives in ~/.config/astronvim, the full path
+            -- must be specified in the next line
+            paths = { "./lua/user/snippets" }
+          }
+        end,
       },
       { 
         "goolord/alpha-nvim", 
@@ -41,8 +81,34 @@ return {
   lsp = {
     setup_handlers = {
       tsserver = function(_, opts) require("typescript").setup { server = opts } end,
-      rust_analyzer = function(_, opts) require("rust-tools").setup { server = opts } end
+      rust_analyzer = function(_, opts) require("rust-tools").setup { server = opts } end,
     },
+    config = {
+      wgsl_analyzer = function(err, result, ctx, config)
+        return {
+          success = true,
+          customImports = { _dummy_ = "dummy"},
+          shaderDefs = {},
+          trace = {
+                extension = false,
+                server = false,
+          },
+          inlayHints = {
+                enabled = true,
+                typeHints = true,
+                parameterHints = true,
+                structLayoutHints = true,
+                typeVerbosity = "inner",
+          },
+          diagnostics = {
+                typeErrors = true,
+                nagaParsingErrors = true,
+                nagaValidationErrors = true,
+                nagaVersion = "main",
+          }
+        }
+     end
+    }
   },
 
   mappings = {
@@ -60,8 +126,8 @@ return {
   
     n = {
       -- Switch buffers
-      L = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" },
-      H = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc = "Previous buffer" },
+     ["L"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" },
+     ["H"] = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc = "Previous buffer" },
 
       -- Allow moving the cursor through wrapped lines with j, k, <Up> and <Down>
       -- http://www.reddit.com/r/vim/comments/2k4cbr/problem_with_gj_and_gk/
@@ -75,11 +141,24 @@ return {
 
       -- Use ";" as command mode
       [";"] = { ":" },
+
+      ["<leader>m"] = { "<cmd>MarkdownPreviewToggle<cr>", desc = "Toggle markdown preview" },
+
+      ["s"] = { ":%s/", desc = "Search and replace" },
+
+      -- Gopher
+      ["<leader>G"] = { name = "Gopher" },
+      ["<leader>Ge"] = { "<cmd>GoIfErr<cr>", desc = "Inline Go if err" },
+      ["<leader>Gj"] = { "<cmd>GoTagAdd<cr>", desc = "Add JSON tags for Go struct" },
+      ["<leader>Gt"] = { "<cmd>GoTestAdd<cr>", desc = "Generate test for current function" },
+      ["<leader>GT"] = { "<cmd>GoTestAll<cr>", desc = "Generate tests for all functions" },
     },
 
     v = {
       -- Use ";" as command mode
       [";"] = { ":" },
+
+      ["s"] = { ":s/", desc = "Search and replace" },
     },
 
     x = {
@@ -106,6 +185,7 @@ return {
         foldexpr = "nvim_treesitter#foldexpr()",
         foldmethod = "expr",
         guifont = { "FiraCode Nerd Font", ":h14" },
+        -- iskeyword = { '_', '-', '/', '.' },
       },
     },
 }

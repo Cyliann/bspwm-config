@@ -1,0 +1,71 @@
+#!/bin/bash
+declare -A dirs
+
+tempfile=$(mktemp)
+histfile="$XDG_CACHE_HOME/watch/hist"
+
+if ! [ -d "$XDG_CACHE_HOME/watch" ]; then
+	mkdir "$XDG_CACHE_HOME/watch"
+fi
+
+if ! [ -e "$XDG_CACHE_HOME/watch/hist" ]; then
+	touch "$XDG_CACHE_HOME/watch/hist"
+fi
+
+select_media() {
+	cat $histfile >$tempfile
+	for dir in /media/{Movies,Shows,Anime}/*; do
+		key=$(basename "$dir")
+		dirs[$key]=$dir
+	done
+
+	for key in "${!dirs[@]}"; do
+		echo $key >>$tempfile
+	done
+
+	awk -i inplace '!seen[$0]++' $tempfile # remove duplicates from the list
+
+	selected=$(cat $tempfile | rofi -i -dmenu)
+
+	if [ -z "$selected" ]; then
+		exit 0
+	fi
+
+	cd "${dirs[$selected]}"
+	select_episode "$selected"
+}
+
+select_episode() {
+	LEVEL=0
+	while true; do
+		SELECTED=$(ls | rofi -i -dmenu -theme-str 'window {width: 50%;}') #fzf --reverse --cycle --bind "alt-bspace:become:(echo ..)") # make alt-bspace move up the dir tree
+
+		if [ -z "$SELECTED" ]; then
+			exit 0
+		fi
+
+		if [ -d "$SELECTED" ]; then
+			if [ "$SELECTED" = ".." ]; then
+				if [ "$LEVEL" = 0 ]; then
+					select_media
+					exit 0
+				fi
+				((LEVEL -= 2))
+			fi
+
+			cd "$SELECTED"
+			((LEVEL += 1))
+			continue
+		fi
+
+		if [ -f "$SELECTED" ]; then
+			echo -e "$1\n$(cat $histfile)" >$histfile # put on top of history
+			awk -i inplace '!seen[$0]++' $histfile    # remove duplicates from history
+			mpv "$SELECTED"
+			SELECTED=''
+			continue
+		fi
+	done
+}
+
+select_media

@@ -23,7 +23,7 @@ window {
     border-radius: 6;
     border-color: @bordercolor;
     padding:          5;
-    width: 35%;
+    width: 25%;
 }
 
 mainbox {
