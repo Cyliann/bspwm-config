@@ -65,7 +65,10 @@ song_list_format = " $2%t $R$7%l $R$5%a "
 #uncomment both statement's below if you want to display the albumart
 
 execute_on_song_change="~/.config/ncmpcpp/ncmpcpp-icat/ncmpcpp_cover_art.sh"
-#song_list_format = "                       $2%t $R$7%l $R$5%a "
+# song_list_format = "                       $2%t $R$7%l $R$5%a "
 
 song_status_format = "$b$7♫ $2%a $4⟫$3⟫ $8%t $4⟫$3⟫ $5%b "
 song_window_title_format = " {%a} - {%t}"
+
+# display album artist instead of artist in tab 4
+media_library_primary_tag = album_artist
