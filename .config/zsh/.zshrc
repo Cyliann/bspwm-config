@@ -1,65 +1,70 @@
-source ~/.bashrc
-source ~/.profile
-source ~/.config/zsh/.zshenv
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-# The following lines were added by compinstall
-zstyle ':completion:*' completer _expand _complete _ignored _approximate
-zstyle ':completion:*' file-sort modification
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*' ignore-parents parent pwd .. directory
-zstyle ':completion:*' insert-unambiguous true
-zstyle ':completion:*' list-colors ''
-zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
-zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}'
-zstyle ':completion:*' menu select=1
-zstyle ':completion:*' original true
-zstyle ':completion:*' preserve-prefix '//[^/]##/'
-zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
-zstyle ':completion:*' squeeze-slashes true
-zstyle ':completion:*' use-compctl false
-zstyle ':completion:*' verbose true
-zstyle :compinstall filename '/home/cylian/.zshrc'
+# Set the directory we want to store zinit and plugins
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
+# Download Zinit, if it's not there yet
+if [ ! -d "$ZINIT_HOME" ]; then
+   mkdir -p "$(dirname $ZINIT_HOME)"
+   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
 
-# Lines configured by zsh-newuser-install
-HISTFILE=$XDG_CONFIG_HOME/zsh/histfile
-HISTSIZE=10000
-SAVEHIST=10000
-setopt autocd nomatch
-unsetopt beep
-bindkey -e
-# End of lines configured by zsh-newuser-install
+# Source/Load zinit
+source "${ZINIT_HOME}/zinit.zsh"
 
-# Custom Variables
-EDITOR=nvim
-export PATH="$PATH:$HOME/.scripts/:$HOME/.local/share/cargo/bin/"
+# Add in Powerlevel10k
+zinit ice depth=1; zinit light romkatv/powerlevel10k
 
-## Load pure theme
-fpath+=$HOME/.config/zsh/pure
-ZSH_THEME=pure
-autoload -U promptinit
-promptinit
-prompt pure
+# Add in zsh plugins
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+
+# Add in snippets
+zinit snippet OMZP::command-not-found
+
+# Load completions
+autoload -Uz compinit && compinit
+
+zinit cdreplay -q
 
 # Keybindings
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-bindkey "^[[3~" delete-char
+bindkey -e
+bindkey '^k' history-search-backward
+bindkey '^j' history-search-forward
 
-# Set zcompdump directory
-compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+# History
+HISTSIZE=5000
+HISTFILE=$XDG_CONFIG_HOME/zsh/histfile
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
 
-# Vim mode
-#set -o vi
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-# Load. Should be last.
-source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
-#source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-source $HOME/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+# Aliases
+source ~/.bashrc
 
-# Load zoxide
+# Shell integrations
+eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
+
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

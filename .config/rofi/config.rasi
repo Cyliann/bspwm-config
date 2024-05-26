@@ -2,10 +2,17 @@ configuration {
     modi: "window,drun,run";
     display-drun: "";
     show-icons: true;
+    kb-row-up: "Up,Control+k,Shift+Tab";
+    kb-row-down: "Down,Control+j";
+    kb-accept-entry: "Control+l,Return,KP_Enter";
+    terminal: "kitty";
+    kb-remove-to-eol: "Control+Shift+e";
+    kb-remove-char-back: "BackSpace";
+    kb-mode-complete: "Control+m";
 }
 
 * {
-    font: "Agave Nerd Font 11";
+    font: "Agave Nerd Font 12";
     text-color: #f8f8f2;
     background-color: #282a36;
     active-background: #6272a4;

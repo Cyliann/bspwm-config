@@ -25,7 +25,7 @@ select_media() {
 
 	awk -i inplace '!seen[$0]++' $tempfile # remove duplicates from the list
 
-	selected=$(cat $tempfile | rofi -i -dmenu)
+	selected=$(cat $tempfile | rofi -i -dmenu -p "Search")
 
 	if [ -z "$selected" ]; then
 		exit 0
@@ -38,7 +38,7 @@ select_media() {
 select_episode() {
 	LEVEL=0
 	while true; do
-		SELECTED=$(ls | rofi -i -dmenu -theme-str 'window {width: 50%;}') #fzf --reverse --cycle --bind "alt-bspace:become:(echo ..)") # make alt-bspace move up the dir tree
+		SELECTED=$(ls | rofi -i -dmenu -p "Search" -theme-str 'window {width: 50%;}') #fzf --reverse --cycle --bind "alt-bspace:become:(echo ..)") # make alt-bspace move up the dir tree
 
 		if [ -z "$SELECTED" ]; then
 			exit 0

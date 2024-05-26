@@ -145,6 +145,7 @@ return {
       ["<leader>m"] = { "<cmd>MarkdownPreviewToggle<cr>", desc = "Toggle markdown preview" },
 
       ["s"] = { ":%s/", desc = "Search and replace" },
+      ["<leader>E"] = { ":cd %:p:h<cr>", desc = "Change workdir to current open file" },
 
       -- Gopher
       ["<leader>G"] = { name = "Gopher" },

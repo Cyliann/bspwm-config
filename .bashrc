@@ -4,6 +4,7 @@
 
 # Env variables
 export EDITOR=nvim
+export PATH="$PATH:$HOME/.scripts/:$HOME/.local/share/cargo/bin/"
 
 # Useful aliases
 alias c='clear'
