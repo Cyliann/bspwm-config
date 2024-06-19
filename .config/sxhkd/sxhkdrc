@@ -181,16 +181,13 @@ XF86AudioMute
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 XF86AudioPlay
-	mpc toggle
+	mpris2controller PlayPause	
 
 XF86AudioNext
-	mpc next
+	mpris2controller Next	
 
 XF86AudioPrev
-	mpc prev
-
-XF86AudioStop
-	mpc stop
+	mpris2controller Previous	
 
 # Misc
 Print

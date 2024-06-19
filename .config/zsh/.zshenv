@@ -30,8 +30,6 @@ export TEXMFVAR="$XDG_CACHE_HOME"/texlive/texmf-var
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
-export HISTFILE="$XDG_STATE_HOME"/zsh/history
-export ZDOTDIR="$HOME"/.config/zsh
 
 # fcitx support in terminal
 export GLFW_IM_MODULE=ibus

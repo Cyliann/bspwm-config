@@ -1,0 +1,24 @@
+set previewer ~/.config/lf/scope-lf-wrapper.sh
+set previewer ~/.config/lf/lf_kitty_preview
+set cleaner ~/.config/lf/lf_kitty_clean
+
+cmd open-with ${{
+    set -f
+    rifle -l $fx
+    read -p "Open with: " method
+    rifle -p $method $fx
+}}
+
+cmd bulkrename ${{
+   echo $fx
+  /bin/sh -c "vimv $(echo -e "$fx" | xargs -i echo "\\'{}\\'" | xargs echo)"
+}}
+
+map i $LESSOPEN='| ~/.config/lf/scope-lf-wrapper.sh %s' less -R $f
+
+map a :touch<space>""<c-b>
+map D :delete $fx
+map A :push $mkdir<space>
+map R :rename 
+map r open-with
+map br bulkrename
