@@ -150,8 +150,8 @@ super + shift + {Left,Down,Up,Right}
 # personal
 #
 
-super + w
-	~/.scripts/randwal
+# super + w
+# 	~/.scripts/randwal
 
 super + shift + w
   ~/.scripts/select_wallpaper

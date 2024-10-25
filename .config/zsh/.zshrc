@@ -36,8 +36,8 @@ zinit cdreplay -q
 
 # Keybindings
 bindkey -e
-bindkey '^k' history-search-backward
-bindkey '^j' history-search-forward
+bindkey '^j' history-search-backward
+bindkey '^k' history-search-forward
 bindkey "^[[3~" delete-char
 
 # History

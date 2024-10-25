@@ -29,3 +29,5 @@ alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settin
 alias ffmpeg='ffmpeg -hide_banner'
 alias cd='z'
 alias cdi='zi'
+alias ssh='kitty +kitten ssh'
+alias send='rsync -a --info=progress2 --no-i-r'
